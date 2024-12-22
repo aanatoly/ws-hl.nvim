@@ -63,6 +63,7 @@ Example usage
 ```lua
 opts = {
   max_blank_lines = 1,
+  conform_fts = { "*" },
   hl_group = { bg = "yellow" },
 }
 ```
