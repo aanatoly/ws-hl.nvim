@@ -18,20 +18,18 @@ M.refresh = function(_)
     return
   end
   if rc2 then
-    local reg = "\\S.*\\n\\zs\\(\\n\\)\\{1,%s}\\ze\\_s*\\S"
+    local reg = "\\S.*\\n\\zs\\(\\n\\)\\{1,%s}\\ze\\_s*\\(\\S\\|\\%%#\\)"
     reg = string.format(reg, M.options.max_blank_lines)
     vim.w.ws_enabled = {
       -- highlight spaces at the end of a line
       vim.fn.matchadd(M.options.hl_name, "\\s\\+$", M.options.hl_ws_prio),
       -- no highlight for whitespaces before cursor position
-      vim.fn.matchadd("Normal", "\\s\\+\\%#", M.options.hl_clear_prio),
+      vim.fn.matchadd("Whitespace", "\\s\\+\\%#", M.options.hl_clear_prio),
 
       -- highlight all empty lines
       vim.fn.matchadd(M.options.hl_name, "^\\n\\+", M.options.hl_ws_prio),
-      -- no highlight for first N blank lines, following text, unless EOF
-      vim.fn.matchadd("Normal", reg, M.options.hl_clear_prio),
-      -- no highlight for newline after cursor
-      vim.fn.matchadd("Normal", "\\%#\\n", M.options.hl_clear_prio),
+      -- no highlight for first N blank lines, after text and before another text or cursor
+      vim.fn.matchadd("Whitespace", reg, M.options.hl_clear_prio),
     }
   else
     for _, r in ipairs(vim.w.ws_enabled) do
