@@ -82,7 +82,7 @@ that mapping:
 vim.keymap.del("n", "<Esc>")
 ```
 
-## Creadits
+## Credits
 
 Big thanks to these awesome projects for ideas and inspiration:
 
