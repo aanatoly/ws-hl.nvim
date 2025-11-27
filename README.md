@@ -1,7 +1,7 @@
-# `ws-trim.nvim`
+# `ws-hl.nvim`
 
-[![Version](https://img.shields.io/github/tag/aanatoly/ws-trim.nvim.png)](https://github.com/aanatoly/ws-trim.nvim/releases)
-[![Licence](https://img.shields.io/github/license/aanatoly/ws-trim.nvim.png)](./LICENSE)
+[![Version](https://img.shields.io/github/tag/aanatoly/ws-hl.nvim.png)](https://github.com/aanatoly/ws-hl.nvim/releases)
+[![Licence](https://img.shields.io/github/license/aanatoly/ws-hl.nvim.png)](./LICENSE)
 [![Neovim](https://img.shields.io/badge/NeoVim-0.10-blue.png?logo=neovim)][neovim]
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen.png)
 
