@@ -51,7 +51,7 @@ opts = {
   -- see `h: nvim_set_hl` for details
   -- { link = "Error" } - link to Error hl_group
   -- { bg = "red" } - red background
-  hl_ws_group = { link = "Error" },
+  hl_ws_group = { link = "Search" },
 }
 ```
 
