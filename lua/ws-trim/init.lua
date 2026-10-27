@@ -2,7 +2,7 @@ local M = {}
 
 local default_opts = {
   max_blank_lines = 2,
-  hl_ws_group = { link = "Error" },
+  hl_ws_group = { link = "Search" },
   hl_ws_name = "ExtraWhitespace",
   hl_ws_prio = 10,
   hl_clear_name = "Whitespace",
